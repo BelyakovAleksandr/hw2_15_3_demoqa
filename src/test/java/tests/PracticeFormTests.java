@@ -30,7 +30,7 @@ public class PracticeFormTests {
         $("#lastName").setValue("Pushkin");
         $("#userEmail").setValue("apushkin@test.com");
 
-        $(byText("Female")).click();
+        $(byText("Male")).click();
 
         $("#userNumber").setValue("1234567890");
 
@@ -46,7 +46,7 @@ public class PracticeFormTests {
         $(byText("Music")).click();
 
 
-        $("#uploadPicture").uploadFile(download("https://demoqa.com/images/Toolsqa.jpg"));
+        $("#uploadPicture").uploadFile(download("https://demoqa.com/images/Test_Demo.jpg"));
 
         $("#currentAddress").setValue("bla bla bla");
 
@@ -59,8 +59,8 @@ public class PracticeFormTests {
 
         $(".modal-header").shouldHave(Condition.text("Thanks for submitting the form"));
         $(".table-responsive").shouldHave(Condition.text("Aleksandr Pushkin"),
-                Condition.text("test@test.com"),
-                Condition.text("Female"),
+                Condition.text("apushkin@test.com"),
+                Condition.text("Male"),
                 Condition.text("1234567890"),
                 Condition.text("29 November,1990"),
                 Condition.text("Maths"),

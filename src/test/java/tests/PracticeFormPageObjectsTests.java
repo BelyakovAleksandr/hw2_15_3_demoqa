@@ -25,7 +25,7 @@ public class PracticeFormPageObjectsTests {
                 .setFirstName("Egor")
                 .setLastName("Krid")
                 .setEmail("ekrid@test.com")
-                .setGender("Female")
+                .setGender("Male")
                 .setNumber("1234567890")
                 .setBirthdate("1990","November","29")
                 .setSubjects("Maths")
@@ -41,7 +41,7 @@ public class PracticeFormPageObjectsTests {
                 .checkResultsVisible()
                 .checkResult("Student Name", "Egor Krid")
                 .checkResult("Student Email", "ekrid@test.com")
-                .checkResult("Gender", "Female")
+                .checkResult("Gender", "Male")
                 .checkResult("Mobile", "1234567890")
                 .checkResult("Date of Birth", "29 November,1990")
                 .checkResult("Subjects", "Maths")
@@ -57,13 +57,13 @@ public class PracticeFormPageObjectsTests {
         practiceFormPageObjectsPage.openPage()
                 .setFirstName("Egor")
                 .setLastName("Krid")
-                .setGender("Female")
+                .setGender("Male")
                 .setNumber("1234567890")
                 .clickSubmit()
 
                 .checkResultsVisible()
                 .checkResult("Student Name", "Egor Krid")
-                .checkResult("Gender", "Female")
+                .checkResult("Gender", "Male")
                 .checkResult("Mobile", "1234567890")
                 .closeResultModal();
     }
